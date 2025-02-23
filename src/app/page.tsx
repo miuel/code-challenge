@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="text-4xl sm:text-8xl font-bold text-left pb-4 border-b border-[#dadada]">Coding Session</h1>
         <a
           href="/categoriesListingPage"
-          className="cursor-pointer text-xl font-bold relative sm:absolute sm:right-4 sm:top-[5vh] text-[#dadada] bg-black py-1 px-2 hover:text-black hover:bg-transparent hover:underline">Go to Categories List
+          className="cursor-pointer text-xl font-bold relative sm:absolute sm:right-4 -top-[15vh] sm:top-[5vh] text-[#dadada] bg-black py-1 px-2 hover:text-black hover:bg-transparent hover:underline">Go to Categories List
 
           <span className="ml-1">↑</span>
         </a>

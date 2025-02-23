@@ -69,7 +69,7 @@ const CategoriesListingPage: React.FC<CategoriesListingPageProps> = () => {
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         className="bg-[#D9D9D9] w-[614px] h-10 pl-4 border border-black" placeholder="Search..." />
-                    <button className='size-10 bg-black border border-black text-white'
+                    <button className='px-2 size-10 bg-black border border-black text-white'
                         onClick={filterQuery}
                     >Go</button>
                 </div>
