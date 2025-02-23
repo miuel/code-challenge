@@ -4,19 +4,19 @@ export default function Home() {
   return (
     <main className="min-h-screen w-screen p-4">
       <section id="stack" className="relative mt-[30vh] mb-[20vh]">
-        <h1 className="text-8xl font-bold text-left pb-4 border-b border-[#dadada]">Coding Session</h1>
+        <h1 className="text-4xl sm:text-8xl font-bold text-left pb-4 border-b border-[#dadada]">Coding Session</h1>
         <a
           href="/categoriesListingPage"
-          className="cursor-pointer text-xl font-bold absolute right-4 top-[5vh] text-[#dadada] bg-black py-1 px-2 hover:text-black hover:bg-transparent hover:underline">Go to Categories List
+          className="cursor-pointer text-xl font-bold relative sm:absolute sm:right-4 sm:top-[5vh] text-[#dadada] bg-black py-1 px-2 hover:text-black hover:bg-transparent hover:underline">Go to Categories List
 
           <span className="ml-1">↑</span>
         </a>
         <img src="/images/desk.jpg" alt="my office"
-          className="absolute right-4 bottom-[5vh] object-cover"
+          className="relative sm:absolute sm:right-4 sm:bottom-[5vh] object-cover"
           width={345}
           height={256}
         />
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <p className="text-xl font-bold pt-8 pb-4">• Welcome</p>
           <p className="text-base font-normal pb-4">
             My name is Miguel I’m a Frontend developer with more than 6 years of experience.
