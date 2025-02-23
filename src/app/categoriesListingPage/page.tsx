@@ -11,11 +11,7 @@ export interface Category {
     content: string;
 }
 
-interface CategoriesListingPageProps {
-    categories: Category[];
-};
-
-const CategoriesListingPage: React.FC<CategoriesListingPageProps> = () => {
+const CategoriesListingPage = () => {
     const [query, setQuery] = React.useState<string>('');
     const [categories, setCategories] = React.useState<Category[]>([]);
     const [categoriesCopy, setCategoriesCopy] = React.useState<Category[]>([]);
