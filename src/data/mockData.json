@@ -1,0 +1,214 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "pageType": "fuelDepot",
+            "pageTitle": "Rocket Fuel",
+            "isActive": true,
+            "content": "High-performance fuel for space missions."
+        },
+        {
+            "id": 2,
+            "pageType": "astroGear",
+            "pageTitle": "Bottle Cooler",
+            "isActive": true,
+            "content": "Keeps your drinks at the perfect temperature."
+        },
+        {
+            "id": 3,
+            "pageType": "cosmicHub",
+            "pageTitle": "Space Station",
+            "isActive": false,
+            "content": "A modular station for long-term missions."
+        },
+        {
+            "id": 4,
+            "pageType": "astroGear",
+            "pageTitle": "Anti-Gravity Boots",
+            "isActive": true,
+            "content": "Walk effortlessly in low-gravity environments."
+        },
+        {
+            "id": 5,
+            "pageType": "astroGear",
+            "pageTitle": "Lunar Rover",
+            "isActive": true,
+            "content": "Designed for exploration on rocky surfaces."
+        },
+        {
+            "id": 6,
+            "pageType": "cosmicHub",
+            "pageTitle": "Asteroid Mining",
+            "isActive": false,
+            "content": "Extract valuable minerals from space."
+        },
+        {
+            "id": 7,
+            "pageType": "astroGear",
+            "pageTitle": "Jetpack X1",
+            "isActive": true,
+            "content": "Personal jet propulsion system for short flights."
+        },
+        {
+            "id": 8,
+            "pageType": "dataLogs",
+            "pageTitle": "History of Space Travel",
+            "isActive": true,
+            "content": "A journey through the milestones of space exploration."
+        },
+        {
+            "id": 9,
+            "pageType": "dataLogs",
+            "pageTitle": "Future Colonization",
+            "isActive": true,
+            "content": "What living on Mars could look like."
+        },
+        {
+            "id": 10,
+            "pageType": "ecoSphere",
+            "pageTitle": "Potatoes",
+            "isActive": true,
+            "content": "Growing crops in space for sustainable missions."
+        },
+        {
+            "id": 11,
+            "pageType": "astroGear",
+            "pageTitle": "Smart Helmet",
+            "isActive": true,
+            "content": "Displays real-time data and communication tools."
+        },
+        {
+            "id": 12,
+            "pageType": "dataLogs",
+            "pageTitle": "Black Holes Explained",
+            "isActive": false,
+            "content": "Understanding these mysterious cosmic objects."
+        },
+        {
+            "id": 13,
+            "pageType": "ecoSphere",
+            "pageTitle": "Cryosleep Technology",
+            "isActive": true,
+            "content": "Enabling deep-space travel with hibernation."
+        },
+        {
+            "id": 14,
+            "pageType": "astroGear",
+            "pageTitle": "Solar Panels",
+            "isActive": true,
+            "content": "High-efficiency energy solutions for space stations."
+        },
+        {
+            "id": 15,
+            "pageType": "cosmicHub",
+            "pageTitle": "Alien Communication",
+            "isActive": false,
+            "content": "Exploring interstellar contact methods."
+        },
+        {
+            "id": 16,
+            "pageType": "astroGear",
+            "pageTitle": "Oxygen Generator",
+            "isActive": true,
+            "content": "A reliable source of breathable air in space."
+        },
+        {
+            "id": 17,
+            "pageType": "dataLogs",
+            "pageTitle": "Time Dilation & Space",
+            "isActive": true,
+            "content": "How space travel affects time perception."
+        },
+        {
+            "id": 18,
+            "pageType": "cosmicHub",
+            "pageTitle": "Meteor Showers",
+            "isActive": true,
+            "content": "Tracking celestial events and their impact."
+        },
+        {
+            "id": 19,
+            "pageType": "astroGear",
+            "pageTitle": "Astro Suit X5",
+            "isActive": true,
+            "content": "Enhanced mobility and radiation protection."
+        },
+        {
+            "id": 20,
+            "pageType": "dataLogs",
+            "pageTitle": "Dark Matter Mysteries",
+            "isActive": false,
+            "content": "A deep dive into the unknown matter of the universe."
+        },
+        {
+            "id": 21,
+            "pageType": "ecoSphere",
+            "pageTitle": "Terraforming Mars",
+            "isActive": true,
+            "content": "Making other planets habitable."
+        },
+        {
+            "id": 22,
+            "pageType": "astroGear",
+            "pageTitle": "Lunar Telescope",
+            "isActive": true,
+            "content": "Observing deep space from the Moon's surface."
+        },
+        {
+            "id": 23,
+            "pageType": "cosmicHub",
+            "pageTitle": "Artificial Gravity",
+            "isActive": false,
+            "content": "Developing technology to simulate Earth’s gravity."
+        },
+        {
+            "id": 24,
+            "pageType": "dataLogs",
+            "pageTitle": "Space Tourism",
+            "isActive": true,
+            "content": "The future of commercial space travel."
+        },
+        {
+            "id": 25,
+            "pageType": "astroGear",
+            "pageTitle": "Radiation Shield",
+            "isActive": true,
+            "content": "Protection from cosmic rays and solar flares."
+        },
+        {
+            "id": 26,
+            "pageType": "cosmicHub",
+            "pageTitle": "Exoplanet Discovery",
+            "isActive": true,
+            "content": "Finding Earth-like planets in distant galaxies."
+        },
+        {
+            "id": 27,
+            "pageType": "dataLogs",
+            "pageTitle": "Quantum Mechanics in Space",
+            "isActive": false,
+            "content": "How quantum physics applies to space travel."
+        },
+        {
+            "id": 28,
+            "pageType": "astroGear",
+            "pageTitle": "AI Navigation System",
+            "isActive": true,
+            "content": "Smart route planning for interstellar travel."
+        },
+        {
+            "id": 29,
+            "pageType": "ecoSphere",
+            "pageTitle": "Astrobiology",
+            "isActive": true,
+            "content": "Studying the possibility of extraterrestrial life."
+        },
+        {
+            "id": 30,
+            "pageType": "dataLogs",
+            "pageTitle": "Wormholes & Space Travel",
+            "isActive": true,
+            "content": "Theoretical shortcuts through the universe."
+        }
+    ]
+}
