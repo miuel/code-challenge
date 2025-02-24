@@ -46,11 +46,11 @@ const CategoriesListingPage = () => {
     }, [query]);
 
     const filterQuery = async () => {
-        if (query !== "") {
+        if (query.trim() !== "" && query.length > 1 ) {
             const res = await fetch(`/api/categories?search=${query}`);
-            const data = await res.json();            
+            const data = await res.json();
             setCategories(data);
-        }
+        } 
     }
 
 
@@ -79,14 +79,16 @@ const CategoriesListingPage = () => {
                     >Description</p>
                 </div>
 
-                {categories.length === 0 ?
+                {categories.length === 0 &&
                     <div className='grid place-items-center mt-28'>
                         <svg className='size-24 animate-spin' viewBox="-25 -25 250 250" >
                             <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
                             <circle r="90" cx="100" cy="100" stroke="#000" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="215px" fill="transparent" stroke-dasharray="565.48px"></circle>
                         </svg>
                     </div>
-                    :
+                }
+                
+                {categories.length > 0 &&
                     <ul>
                         {categories.map((category) => (
                             <CategoryItem key={category.id.toString()} {...category} />
