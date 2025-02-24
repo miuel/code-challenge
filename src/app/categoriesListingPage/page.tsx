@@ -1,5 +1,5 @@
 "use client";
-import { getCategories } from '@/api/pages/route';
+//import { getCategories } from '@/api/categories/route';
 import React, { useEffect } from 'react';
 import CategoryItem from '../components/categoryItem/CategoryItem';
 
@@ -14,15 +14,17 @@ export interface Category {
 const CategoriesListingPage = () => {
     const [query, setQuery] = React.useState<string>('');
     const [categories, setCategories] = React.useState<Category[]>([]);
-    const [categoriesCopy, setCategoriesCopy] = React.useState<Category[]>([]);
+
 
 
     const fetchCategories = async () => {
-        const data = await getCategories();
-        if (data && data.categories) {
-            setCategories(data.categories);
-            setCategoriesCopy(data.categories);
+        const res = await fetch(`/api/categories`);
+        if (!res.ok) {
+            throw new Error('Error fetching categories');
         }
+        const data = await res.json();
+
+        setCategories(data.categories);
     }
 
     useEffect(() => {
@@ -31,7 +33,6 @@ const CategoriesListingPage = () => {
 
 
     useEffect(() => {
-
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Enter') {
                 filterQuery();
@@ -44,16 +45,14 @@ const CategoriesListingPage = () => {
         };
     }, [query]);
 
-    const filterQuery = () => {
-        if (query === '') {
-            setCategories(categoriesCopy);
-        } else {
-            const filteredCategories = categoriesCopy.filter((category) => {
-                return category.pageTitle.toLowerCase().includes(query.toLowerCase());
-            });
-            setCategories(filteredCategories);
+    const filterQuery = async () => {
+        if (query !== "") {
+            const res = await fetch(`/api/categories?search=${query}`);
+            const data = await res.json();            
+            setCategories(data);
         }
     }
+
 
     return (
         <main className="min-h-screen w-screen p-4">
@@ -80,19 +79,19 @@ const CategoriesListingPage = () => {
                     >Description</p>
                 </div>
 
-                {categories.length === 0 &&
+                {categories.length === 0 ?
                     <div className='grid place-items-center mt-28'>
                         <svg className='size-24 animate-spin' viewBox="-25 -25 250 250" >
                             <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
                             <circle r="90" cx="100" cy="100" stroke="#000" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="215px" fill="transparent" stroke-dasharray="565.48px"></circle>
                         </svg>
-                    </div>}
-
-                <ul>
-                    {categories.map((category) => (
-                        <CategoryItem key={category.id.toString()} {...category} />
-                    ))}
-                </ul>
+                    </div>
+                    :
+                    <ul>
+                        {categories.map((category) => (
+                            <CategoryItem key={category.id.toString()} {...category} />
+                        ))}
+                    </ul>}
 
             </section>
         </main>
