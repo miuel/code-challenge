@@ -16,8 +16,6 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ params }) => {
     const title = decodeURIComponent(slug);
     const [article, setArticle] = React.useState<Category | null>(null);
 
-    console.log("article", article);
-
     const fetchArticle = async () => {
         const res = await fetch(`/api/categories?search=${title}`);
         const data = await res.json();
