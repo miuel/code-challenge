@@ -43,8 +43,8 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ params }) => {
                     {article === null ?
                         <div className='grid place-items-center mt-28'>
                             <svg className='size-24 animate-spin' viewBox="-25 -25 250 250" >
-                                <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" stroke-width="16px"></circle>
-                                <circle r="90" cx="100" cy="100" stroke="#000" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="215px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" strokeWidth="16px"></circle>
+                                <circle r="90" cx="100" cy="100" stroke="#000" strokeWidth="16px" strokeLinecap="round" strokeDashoffset="215px" fill="transparent" strokeDasharray="565.48px"></circle>
                             </svg>
                         </div>
                         : (
