@@ -3,6 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen w-screen p-4">
+      
+      <div className='w-[130vw] h-80 bg-blue-400 rotate-12 absolute top-0'></div>
+            <div className='w-[130vw] h-80 bg-yellow-400 rotate-45 absolute z-0 top-0'></div>
       <section id="stack" className="relative mt-[30vh] mb-[20vh]">
         <h1 className="text-4xl sm:text-8xl font-bold text-left pb-4 border-b border-[#dadada]">Coding Session</h1>
         <a
@@ -25,7 +28,7 @@ export default function Home() {
 
           <p className="pb-4">
             <b>Backend: Next.js (API Routes, JavaScript)</b>
-            <br />I picked Next.js because it lets me build a backend really fast without needing a separate server. The built-in API routes make it easy to set up endpoints, and since I’m working with JavaScript, everything stays simple. Plus, deploying it (e.g., on Vercel) is super easy.
+            <br />I picked Next.js because it lets me build a backend really fast without needing a separate server. The built-in API routes make it easy to set up endpoints, and since I’m working with JavaScript, everything stays simple. Plus, deploying it (e.g., on Vercel) is easier.
           </p>
 
           <p className="pb-4">

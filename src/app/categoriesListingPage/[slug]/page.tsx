@@ -37,7 +37,9 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ params }) => {
 
     return (
         <main className="min-h-screen w-screen p-4">
-            <section id="article" className="relative my-[30vh]">
+            <div className='w-[130vw] h-80 bg-blue-500 rotate-12 absolute top-0'></div>
+            <div className='w-[130vw] h-80 bg-red-500 rotate-45 absolute z-0 top-0'></div>
+            <section id="article" className="relative my-[30vh] z-20">
                 <div className='w-full sm:w-1/2'>
 
                     {article === null ?
