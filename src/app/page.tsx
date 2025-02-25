@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
             The UI fetches category data from the backend, displays it in a clean list, and includes a search input to filter categories based on pageTitle.
           </p>
 
-          <p className="text-base font-normal pb-4">AI ChatGPT helped to add mor content to the JSON.</p>
+          <p className="text-base font-normal pb-4">AI ChatGPT helped to structured backend and to add more content to the JSON.</p>
 
           <div className="flex justify-between pb-4">
             <p className="text-base font-normal">
