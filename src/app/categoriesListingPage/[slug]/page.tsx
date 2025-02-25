@@ -16,12 +16,10 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ params }) => {
     const title = decodeURIComponent(slug);
     const [article, setArticle] = React.useState<Category | null>(null);
 
-    console.log("article", article);
-    
     const fetchArticle = async () => {
         const res = await fetch(`/api/categories?search=${title}`);
         const data = await res.json();
-        
+
         console.log('Fetched data:', data);
 
         if (data.length > 0) {
@@ -51,11 +49,11 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ params }) => {
                         </div>
                         : (
                             <>
-                                <h1 className="text-4xl sm:text-8xl font-bold text-left pt-8 pb-4">{article?.pageTitle}</h1>
-                                <p className="text-base font-bold flex-1"># {article.id}</p>
-
+                                <h1 className="text-4xl sm:text-8xl font-bold text-left pt-8 pb-2">
+                                    {article?.pageTitle}</h1>
                                 <h2 className="text-4xl py-2 font-bold flex-1">{article.pageType}</h2>
                                 <p className="text-base font-normal flex-1">{article.content}</p>
+                                <span className='text-8xl pb-2 font-bold text-left text-[#D9D9D9]'>#{article.id} <br /></span>
                             </>
                         )}
 
